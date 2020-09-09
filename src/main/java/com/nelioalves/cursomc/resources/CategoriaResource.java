@@ -1,9 +1,6 @@
 package com.nelioalves.cursomc.resources;
 
-import java.util.ArrayList;
-import java.util.List;
 import java.util.Optional;
-
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.PathVariable;
@@ -15,7 +12,7 @@ import com.nelioalves.cursomc.domain.Categoria;
 import com.nelioalves.cursomc.services.CategoriaService;
 
 @RestController
-@RequestMapping(value="/Categorias")
+@RequestMapping(value="/categorias")
 public class CategoriaResource {
 	
 	@Autowired
