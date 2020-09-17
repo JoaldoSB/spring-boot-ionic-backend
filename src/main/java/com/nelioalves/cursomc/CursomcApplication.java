@@ -19,6 +19,7 @@ public class CursomcApplication implements CommandLineRunner {
 	@Autowired
 	private CategoriaRepository categoriaRepository;
 	
+	@Autowired
 	private ProdutoRepository produtoRepository;
 
 	
@@ -31,6 +32,7 @@ public class CursomcApplication implements CommandLineRunner {
 		
 		Categoria cat1 = new Categoria(null, "Informática");
 		Categoria cat2 = new Categoria(null, "Escritório");
+		
 		
 		Produto p1 = new Produto(null, "Computador", 2000.00);
 		Produto p2 = new Produto(null, "Impressora", 800.00);
