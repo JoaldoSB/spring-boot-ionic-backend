@@ -15,16 +15,9 @@ public class CategoriaService {
 	@Autowired
 	private CategoriaRepository repo;
 	
-	public Optional<Categoria> buscar(Integer id) {
-		
-		Optional<Categoria> obj = repo.findById(id);
-		if (obj == null) {
-			
-			throw new ObjectNotFoundException("Objeto não encontrado! Id: " +id
-					+" , Tipo: " +Categoria.class.getName());
+	public Categoria buscar(Integer id) {
+		Optional<Categoria> obj= repo.findById(id);
+		return obj.orElseThrow(() -> new ObjectNotFoundException(
+				"Objeto não encontrado! Id: "+ id+ ", Tipo: "+ Categoria.class.getName()));
 		}
-		return obj;
-		
-	}
-
 }
