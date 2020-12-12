@@ -1,9 +1,9 @@
 package com.nelioalves.cursomc.resources.exception;
 
-public class CodTipoClienteInvalido extends RuntimeException{
+public class CodTipoInvalido extends RuntimeException{
 	private static final long serialVersionUID = 1L;
 	
-	public CodTipoClienteInvalido(String mensagem) {
+	public CodTipoInvalido(String mensagem) {
 		super(mensagem);
 	}
 }
